@@ -1,0 +1,133 @@
+body {
+    font-family: 'Amatic SC', cursive;
+}
+
+#box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em;
+}  
+p {
+    font-size: 1em;
+}
+    
+button {
+    font-family : inherit;
+    font-size: 1.5em;
+}  
+
+button:hover {
+    opacity: 50%;
+}
+
+.moods {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 120px;
+    color: black;
+}
+
+#annoyed {
+    background-color: rgb(243, 35, 35)
+}  
+#stressed {
+    background-color: magenta;
+}  
+#hyper {
+    background-color: rgb(255, 100, 0);
+}  
+#elated {
+    background-color: yellow;
+}  
+#embarassed {
+    background-color: rgb(170, 41, 170);
+}  
+#hungry {
+    background-color: orchid;
+}  
+#motivated {
+    background-color: rgb(245, 143, 131);
+}  
+#relieved {
+    background-color: yellowgreen;
+} 
+#glum {
+    background-color: rgb(120, 120, 241);
+}  
+#bored {
+    background-color: rgb(53, 168, 245);
+}  
+#chill {
+    background-color: cyan;
+}  
+#serene {
+    background-color: rgb(54, 190, 145);
+}  
+
+.modal {
+  display: none;
+  position: fixed; 
+  padding-top: 50px;
+  left: 0; 
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  position: relative; 
+  background-color: white;
+  padding: 20px; 
+  margin: auto; 
+  width: 75%;  
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+.close-btn {
+  float: right; 
+  color: lightgray; 
+  font-size: 24px;  
+  font-weight: bold;
+}
+.close-btn:hover {
+  color: darkgray;
+}
+.modal2 {
+    display: none;
+    position: fixed; 
+    padding-top: 50px;
+    left: 0; 
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .close-btn2 {
+    float: right; 
+    color: lightgray; 
+    font-size: 24px;  
+    font-weight: bold;
+  }
+  .close-btn2:hover {
+    color: darkgray;
+  }
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
